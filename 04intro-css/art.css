@@ -1,0 +1,138 @@
+body {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+
+}
+
+@font-face {
+    font-family: "Plante";
+    src: url('Plante.ttf')
+}
+
+/* Header Stuff Here*/
+header {
+    background-color: #F4F1DE;
+    padding: 1rem 2vw;
+}
+header h1 {
+    font-family: Plante;
+    margin: 0;
+    color: #475225;
+}
+header p {
+    margin: 0;
+    color: #6A743A;
+    letter-spacing: .5px;
+}
+/* Nav Stuff Goes Here */
+nav {
+    background-color: #6A743A;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #F4F1DE;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color: #475225;
+    color: #F4F1DE;
+}
+nav a:hover {
+    color: #B1B695;
+}
+
+
+/* Stuff for the Main */
+main{
+    padding: 1rem 2vw;
+    background-color: #F4F1DE;
+}
+
+main h1 {
+    color: #475225;
+}
+
+main h2 {
+    color: #B1B695;
+    margin-bottom: .2rem;
+    background-color: #475225;
+
+    padding: .5rem 3vw;
+    /*width: 12.5rem;*/
+    border: 1px solid #B1B695;
+    border-radius: .5rem;
+}
+
+main p {
+    color: #232220;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #B1B695;
+    padding: .5rem 3vw;
+    border: 1px solid #475225;
+    border-radius: .5rem;
+}
+
+main dl dt {
+    color: #475225;
+    font-weight: 700;
+}
+main dl dd {
+    color: #232220;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    color: #232220;
+    background-color: #B1B695;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #475225;
+    border-radius: .5rem;
+}
+
+main a {
+    color: #232220
+}
+
+main a:hover {
+    color: #B1B695;
+}
+
+
+/* Footer Stuff Here */
+footer {
+    background-color: #6A743A;
+    text-align: center;
+    color: #F4F1DE;
+    padding: 2rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #C6AA58;
+}
