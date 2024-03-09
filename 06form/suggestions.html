@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Art Through the 1800's: Suggestions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn about some different art eras from the 1800's">
+    <meta name="author" content="Arien Kujaczynski">
+    <link rel="stylesheet" href="art.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+    <!--- Page header beginning-->
+    <header>
+        <h1>Art Through the 1800's</h1>
+    </header>
+    <!--- Page navigation beginning-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="romanticism.html">Romanticism</a></li>
+            <li><a href="realism.html">Realism</a></li>
+            <li><a href="preraphaelite.html">Pre-Raphaelite</a></li>
+            <li class="active"><a href="suggestions.html">Suggestions</a></li>
+        </ul>
+    </nav>
+    <!--- Page content beginning-->
+    <main>
+        <h1>Suggestions</h1>
+        <form method="get" class="form" action="thanks.html">
+
+            <fieldset>
+                <legend>Your Information</legend>
+                <label>Name<input type="text" name="name" required> </label>
+                <label>Email<input type="email" name="email" required> </label>
+                <label>Phone Number<input type="tel" name="phone" required placeholder="123-456-7891"> </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Art Info</legend>
+                <label>Artist Name<input type="text" name="name" required> </label>
+                <label>Is this a popular artist of the time?</label>
+                <label><input type="radio" name="method" value="yes">Yes</label>
+                <label><input type="radio" name="method" value="no">No</label>
+                <label>Work Title<input type="text" name="name" required> </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Art era</legend>
+                    <label><input type="checkbox" name="romanticism" value="chosen"> Romanticism</label>
+                    <label><input type="checkbox" name="realism" value="chosen"> Realism</label>
+                    <label><input type="checkbox" name="pre-raphaelite" value="chosen"> Pre-Raphaelite</label>
+                    <label><input type="checkbox" name="impressionism" value="chosen"> Impressionism</label>
+                    <label><input type="checkbox" name="symbolism" value="chosen"> Symbolism</label>
+                    <label><input type="checkbox" name="post-impressionism" value="chosen"> Post-Impressionism</label>
+                    <label><input type="checkbox" name="expressionism" value="chosen"> Expressionism</label>
+                    <label><input type="checkbox" name="art nouveau" value="chosen"> Art Nouveau</label>
+                    <label> Year 
+                        <select name="time">
+                        <option value="none">Select</option>
+                        <option value="1800">Before 1800</option>
+                        <option value="1800-1810">1800-1810</option>
+                        <option value="1810-1820">1810-1820</option>
+                        <option value="1820-1830">1820-1830</option>
+                        <option value="1830-1840">1830-1840</option>
+                        <option value="1840-1850">1840-1850</option>
+                        <option value="1850-1860">1850-1860</option>
+                        <option value="1860-1870">1860-1870</option>
+                        <option value="1870-1880">1870-1880</option>
+                        <option value="1880-1890">1880-1890</option>
+                        <option value="1890-1900">1890-1900</option>
+                        <option value="1900">After 1900</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+        <input type="Submit" value="Send Suggestion">
+        </form>
+        
+        
+    </main>
+    <!--- Page footer beginning-->
+    <footer>
+        <p>&copy; 2024 &bull; Arien Kujaczynski &bull; <a href="mailto:11021812@uvu.edu"> Email Us</a></p>
+    </footer>
+</body>
+</html>
