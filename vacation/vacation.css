@@ -1,0 +1,282 @@
+* {box-sizing: border-box;}
+
+/* font stuff*/
+body {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Header stuff*/
+header {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1vw;
+    max-width: 100%;
+}
+header div {
+    padding-left: 1vw;
+}
+header h1 {
+    font-family: "Silkscreen", sans-serif;
+    color: #003566;
+    margin: 0;
+}
+
+
+/*Small nav*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        list-style-type: none;
+        padding: 0 1vw;
+        margin: 0;
+    }
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFF;
+        background-color: #2877A4;
+        border-bottom: solid 2px #FFC300;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 1rem;
+        display: block; 
+    }
+    nav li.active a {
+        color: #003566;
+        background-image: linear-gradient(to bottom, #FFC600, #FFD60A);
+    }
+    nav a:hover {
+        color: #FFD60A;
+    }
+}
+
+/*Big nav*/
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #2877A4;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0 5vw;
+        margin: 0;
+    }
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFF;
+        border-bottom: solid 2px #FFC300;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: .86rem 2rem;
+        display: block;
+    }
+    nav li.active a {
+        color: #003566;
+        background-image: linear-gradient(to bottom, #FFC600, #FFD60A);
+    }
+    nav a:hover {
+        color: #FFD60A;
+    }
+}
+
+
+
+/*Main stuff*/
+main{
+    padding: 2rem 2vw;
+}
+main h1 {
+    font-family: "Silkscreen", sans-serif;
+    color: #003566;
+    text-shadow: 1px 6px 0px #FFD60A, 
+    1px 15px 10px rgba(16,16,16,0.5);
+    max-width: 100%;
+}
+main h2 {
+    font-family: "Silkscreen", sans-serif;
+    margin: 2rem;
+    border-bottom: 1px solid #003566;
+    text-align: center;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right, #003566, #FFC300, #2877A4, #003566);
+}
+main h3 {
+    color: #003566;
+}
+main p {
+    color: #003566;
+    margin: 0 0 .5rem 0;
+}
+
+/*links*/
+main a {
+    color: #003566
+}
+main a:hover {
+    color: #2877A4;
+}
+
+/*index img*/
+.titlehero {
+    width: 100%;
+    margin: 0;
+}
+.titlehero img {
+    width: 100%;
+    height: auto;
+}
+
+/*destinations*/
+.dcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.destinations {
+    background-color: #2877A4;
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #003566;
+    border-radius: 10px;
+    text-align: center;
+}
+.override {
+    color: #FFF;
+}
+div.destinations img:hover {
+    box-shadow: 10px 10px 10px #003566;
+}
+
+
+/*reviews*/
+.rcontainer {
+    display: flex;
+    flex-wrap: wrap;/**/
+    justify-content: space-around;
+}
+.review {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #003566;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/*packages*/
+.packages {
+    display: flex;
+    align-items: center;
+    background-color: #2877A4;
+    width: 90%;
+    margin: 5px;
+    padding: 20px;
+    border: 2px solid #003566;
+    border-radius: 10px;
+} 
+.packages img {
+    margin-right: 15px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+.override {
+    color: #FFF;
+}
+div.packages img:hover {
+    box-shadow: 10px 10px 10px #003566;
+}
+
+
+
+
+/*form stuff*/
+.form fieldset {
+    border: 2px dashed #003566;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+.form legend {
+    font-family: "Silkscreen", sans-serif;
+    font-size: 1.5rem;
+    color: #003566;
+}
+
+.form textarea {
+    height: 10rem;
+}
+
+.form :required {
+    background-color: #2877A4;
+    filter: brightness(110%);
+}
+
+.form label {
+    margin: .5rem;
+    display: block;
+}
+
+.form textarea, .form select, .form [type=phone], .form [type=text], .form [type=email] {
+    font-family: 'Gruppo', sans-serif;
+    font-weight: 400;
+    display: block;
+    border: 1px dashed #003566;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+}
+
+.form [type=submit] {
+    display: inline-block;
+    background-color: #2877A4;
+    padding: 20px;
+    margin: auto;
+    color: #FFD60A;
+    text-align: center;
+    border: 5px double #FFD60A;
+    border-radius: 10px;
+}
+
+
+/*pg size*/
+header, nav, main, footer {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+
+/*footer stuff*/
+footer {
+    background-color: #2877A4;
+    text-align: center;
+    color: #FFF;
+    padding: 1rem 0;
+    font-size: .8rem;
+    
+}
+footer a {
+    color: #FFD60A;
+}
